@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row row-centered text-center">
+    <div class="col-xs-12 col-centered"><div class="item"><div class="content anchorContent">
+      <a ui-sref="node">Node Chatroom</a>
+      <br>
+      <br>
+      <a ui-sref="angular">Angular Chatroom</a>
+      <br>
+      <br>
+      <div ng-repeat='anchor in anchorArr track by $index'>
+        <a href="/chat/{{anchor}}">{{anchor}} Chatroom</a>
+      </div>
+    </div></div></div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row row-centered text-center">
+
+    <div class="col-xs-12 col-centered"><div class="item"><div class="content welcomeContent">
+      <h1>Working With Sockets!</h1>
+
+      <form name="form" novalidate>
+        <label>Create Room</label>
+        <input type="text" ng-model="room_name" required>
+
+        <button ng-click="addRoom(room_name)" ng-disabled="form.$invalid">Create Room</button>
+
+      </form>
+
+    </div></div></div>
+
+  </div>
+</div>

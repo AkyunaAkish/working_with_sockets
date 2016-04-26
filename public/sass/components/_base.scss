@@ -1,0 +1,24 @@
+.anchorContent {
+  background: black;
+  a,a:visited {
+    color: lime;
+    text-decoration: underline;
+    font-size: 2em;
+  }
+
+  a:hover {
+    color: dodgerblue;
+  }
+
+}
+
+.welcomeContent {
+  background: black;
+  height: 50vh;
+
+  h1 {
+    padding-top: 150px;
+    color: lime;
+  }
+
+}

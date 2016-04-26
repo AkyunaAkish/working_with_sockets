@@ -1,8 +1,15 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+.anchorContent {
+  background: black; }
+  .anchorContent a, .anchorContent a:visited {
+    color: lime;
+    text-decoration: underline;
+    font-size: 2em; }
+  .anchorContent a:hover {
+    color: dodgerblue; }
 
-a {
-  color: #00B7FF;
-}
+.welcomeContent {
+  background: black;
+  height: 50vh; }
+  .welcomeContent h1 {
+    padding-top: 150px;
+    color: lime; }

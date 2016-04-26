@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row row-centered text-center">
+    <div class="col-xs-12 col-centered"><div class="item"><div class="content anchorContent">
+      <a ui-sref="initial">Home</a>
+    </div></div></div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row row-centered text-center">
+    <div class="col-xs-12 col-centered"><div class="item"><div class="content">
+      <h1>Node Chat</h1>
+
+      <ul ng-repeat="message in messages">
+        <li>{{message.message}}</li>
+      </ul>
+
+      <form>
+        <label>All Rooms Message</label>
+        <input type="text" ng-model="allMessage">
+        <button ng-click="all(allMessage)">Submit</button>
+      </form>
+
+      <form>
+        <label>Send Self A Message</label>
+        <input type="text" ng-model="selfMessage">
+        <button ng-click="self(selfMessage)">Submit</button>
+      </form>
+
+      <form>
+        <label>Send Message In Current Page's Rooms</label>
+        <input type="text" ng-model="roomMessage">
+        <button ng-click="sendMessage(roomMessage)">Submit</button>
+      </form>
+
+      <form>
+        <label>Send Direct Message In Current Page's Room</label>
+        <input type="text" ng-model="direct_message">
+        <button ng-click="directMessage(direct_message)">Submit</button>
+      </form>
+      
+
+    </div></div></div>
+
+  </div>
+</div>
